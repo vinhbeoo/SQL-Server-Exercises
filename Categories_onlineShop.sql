@@ -1,0 +1,9 @@
+USE onlineShop
+GO
+
+CREATE TABLE Categories
+(
+	[Id] INT PRIMARY KEY IDENTITY(1,1),
+	[Name] NVARCHAR(50) UNIQUE NOT NULL,
+	[Description] NVARCHAR(500) NULL
+)

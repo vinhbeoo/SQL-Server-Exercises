@@ -1,0 +1,11 @@
+USE onlineShop;
+GO
+
+CREATE TABLE Suppliers
+(
+	[Id] INT PRIMARY KEY IDENTITY(1,1),
+	[Names] NVARCHAR (100) NOT NULL,
+	[Email] VARCHAR (50) UNIQUE NOT NULL,
+	[PhoneNumber] VARCHAR (50) UNIQUE NOT NULL,
+	[Address] NVARCHAR (500) NOT NULL
+)
